@@ -1,0 +1,1092 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color:#333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+  
+
+#hero {
+    background-image: url('backimage.jpg');
+    background-size: contain;
+    background-position: center center;
+    height: 550px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(253, 255, 255);
+    padding: 20px;
+    flex-direction: column;
+    background-attachment: fixed; 
+
+}
+
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Font Name", generic-font;
+    
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-family: "Times New Roman", serif; 
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+}
+
+/*Destination page start*/
+#destinations {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#destinations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px;
+}
+.destination-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    /* Optional: hide scrollbar for a cleaner look */
+    scrollbar-width: none; /* Firefox */
+}
+
+.destination-grid::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+    }
+    
+.destination {
+    width: 320px;
+    height: 400px;
+    flex: none;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+.destination img {
+    width: 100%;
+    height: 280px; 
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.destination h3 {
+    font-size: 1.2em;
+    color: #051322;
+    margin: 10px 0;
+}
+
+.destination a {
+    display: block;
+    padding: 10px 15px;
+    color: #0d75e3;
+    text-decoration: none;
+    font-weight: bold;
+}
+.destination:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+/*Destination page end*/
+/* Footer page start */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer {
+    text-align: center;
+}
+
+.footer h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s;
+}
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.facebook { color: #4267B2; }
+.whatsapp { color: #25D366; }
+.gmail { color: #D44638; }
+
+/* Footer page end */
+
+/*Travel Stories page start*/
+#travel-stories {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+#travel-stories h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.story {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.story img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.story h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.story p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.story:hover {
+    transform: translateY(-10px);
+}
+.story img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.story a {
+    display: block;
+    padding: 10px 15px;
+    color: #0d75e3;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+/*Travel Stories page end*/
+
+/*Feedback Form page start*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #0d75e3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #12549c;
+}
+/*Feedback Form page end*/
+/*Next page start*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#background {
+    background-image: url('LT.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+
+}
+.background-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+}
+.nextpage img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/*Next page end*/
+
+/*Next page1 start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+#background1 {
+    background-image: url('galle2.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+.background1-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: lightskyblue;
+}
+.nextpage img {
+    width: 40%;
+    border-radius: 10px;
+}
+/*Next page1 end*/
+
+/*Negambo page start*/
+#negambo {
+    background-image: url('niga.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Negambo page end*/
+
+/*Sigiriya page start*/
+#sigiriya {
+    background-image: url('sigiri.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Sigiriya page end*/
+
+/*Arugambay page start*/
+#arugambay {
+    background-image: url('ArugamBay2.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Arugambay page end*/
+
+/*Wilpathu page start*/
+#wilpathu {
+    background-image: url('wilpathu.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Wilpathu page end*/
+
+/*Kandy page start*/
+#kandy {
+    background-image: url('kandy1.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Kandy page end*/
+
+/*Ella page start*/
+#ella {
+    background-image: url('ella1.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Ella page end*/
+
+/*Nuwara Eliya page start*/
+#nuwara {
+    background-image: url('nuwara.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Nuwara Eliya page end*/
+
+/*Haputale page start*/
+#haputala {
+    background-image: url('haputala2.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Haputala page end*/
+
+/*Weligama page start*/
+#weligama {
+    background-image: url('weli1.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Weligama page end*/
+
+/*Chilaw page start*/
+#chilaw {
+    background-image: url('chill2.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Chilaw page end*/
+
+/*Trincomalee page start*/
+#trinco {
+    background-image: url('tricom.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Trinco page end*/
+
+/*Matara page start*/
+#matara {
+    background-image: url('matara1.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Matara page end*/
+
+/*Jaffna page start*/
+#jaffna {
+    background-image: url('jaffna.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Jaffna page end*/
+
+/*Polannaruwa page start*/
+#polannaruwa {
+    background-image: url('polannaru.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Polannaruwa page end*/
+
+/*Kalpitiya page start*/
+#kalpitiya {
+    background-image: url('kalpiti.webp');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Kalpitiya Page end*/
+
+/*Mannar page start*/
+#mannar {
+    background-image: url('mannar2.webp');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Mannar Page end*/
+
+/*Tangalle page start*/
+#tangalle {
+    background-image: url('tangalla1.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Tangalle Page end*/
+
+/*Sembuwaththa page start*/
+#sembuwaththa {
+    background-image: url('lake.webp');
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+/*Sembuwaththa Page end*/
+
+/*Tree Hill page start*/
+#mirissa {
+    background-image: url('hill.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    
+}
+/*Tree Hill Page end*/
+/* SAFARIES start */
+#safaries {
+    background-image: url('safari.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.safaries-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.safaries-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.safaries-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.safarie {
+    background-color:#f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.safarie img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.safarie h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+.safarie p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.safarie:hover {
+    transform: translateY(-10px);
+}
+.safarie img {
+    width: 80%;
+    border-radius: 10px;
+}
+/* SAFARIES end */
+
+/* HISTORY & CULTURES start */
+#cultures {
+    background-image: url('culture.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.cultures-content h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding: 50px 20px;
+    text-align: center;
+    text-shadow: 2px 2px;
+    
+}
+
+.cultures-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.cultures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.culture {
+    background-color:#f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.culture img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.culture h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.culture p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.culture:hover {
+    transform: translateY(-10px);
+}
+.culture img {
+    width: 80%;
+    border-radius: 10px;
+}
+/* HISTORY & CULTURES end */
+
+/*MOUNTAINS start */
+#mountains {
+    background-image: url('mountain.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.mountains-content h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding: 50px 20px;
+    text-align: center;
+    text-shadow: 2px 2px;
+    
+}
+
+.mountains-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.mountains-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.mountain {
+    background-color:#f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.mountain img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.mountain h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.mountain p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.mountain:hover {
+    transform: translateY(-10px);
+}
+.mountain img {
+    width: 80%;
+    border-radius: 10px;
+}
+/* MOUNTAINS end */
+
+/*BEACHES start */
+#beaches {
+    background-image: url('beach1.jpg');
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.beaches-content h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    padding: 50px 20px;
+    text-align: center;
+    text-shadow: 2px 2px;
+    
+}
+
+.beaches-content p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.beaches-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.beach {
+    background-color:#f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.beach img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.beach h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #333;
+}
+
+.beach p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.beach:hover {
+    transform: translateY(-10px);
+}
+.beach img {
+    width: 80%;
+    border-radius: 10px;
+}
+/* BEACHES end */
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    #destinations h2 {
+        font-size: 28px;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination h3 {
+        font-size: 20px;
+    }
+    #destinations h2 {
+        font-size: 28px;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destination h3 {
+        font-size: 20px;
+    }
+    
+    
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    #destinations h2 {
+        font-size: 24px;
+    }
+    #destinations h2 {
+        font-size: 24px;
+    }
+    
+}
